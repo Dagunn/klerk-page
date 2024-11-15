@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="header__logo animate__animated animate__fadeIn animate__delay-1s">
+        <img src="./img/logo.svg" alt="logo" width="75" height="36">
+      </a>
+
+
+
+      <nav class="header__breadcrumbs ">
+        <ul class="header__breadcrumbs-list">
+          <li class="header__breadcrumbs-item">
+            <a href="#" class="header__breadcrumbs-link header__breadcrumbs-link--desc">Хлебные крошки</a>
+            <a href="#" class="header__breadcrumbs-link header__breadcrumbs-link--mob">Главная</a>
+            <span>→</span>
+          </li>
+          <li class="header__breadcrumbs-item">
+            <a href="#" class="header__breadcrumbs-link header__breadcrumbs-link--desc">Хлебные крошки</a>
+            <a href="#" class="header__breadcrumbs-link header__breadcrumbs-link--mob">Рассылки</a>
+            <span>→</span>
+          </li>
+          <li class="header__breadcrumbs-item">
+            <a href="#" class="header__breadcrumbs-link">Хлебные крошки</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="header__title animate__animated animate__bounceInLeft animate__delay-0.5s">
+        Подписки «Клерка»
+      </h1>
+    </div>
+
+  </header>
+
+
+
+  <main>
+    <section class="mailing">
+      <div class="container">
+        <div class="mailing__tabs">
+          <ul class="mailing__tabs-list">
+            <li class="mailing__tabs-item mailing__tabs-item--active">
+              <button class="mailing__tabs-button" data-tab="mailings">Рассылки</button>
+            </li>
+            <li class="mailing__tabs-item">
+              <button class="mailing__tabs-button" data-tab="social">Соцсети</button>
+            </li>
+            <li class="mailing__tabs-item">
+              <button class="mailing__tabs-button" data-tab="messengers">Мессенджеры</button>
+            </li>
+          </ul>
+
+
+          <div class="mailing__tabs-content">
+            <div class="mailing__tabs-panel mailing__tabs-panel--active" id="mailings">
+
+              <h2 class="mailing__tabs-title">Выберите рассылки, которые подходят именно вам</h2>
+              <form action="#" class="mailing__tabs-form" method="post">
+                <input class="mailing__tabs-form-input" type="email" name="email" placeholder="Электронная почта"
+                  required>
+                <button class="mailing__tabs-form-btn" type="submit">
+                  <span>Подписаться</span>
+                  <img src="img/arrow-right.svg" alt="arrow-right" width="8" height="14">
+                </button>
+
+                <div class="toggle-inner">
+                  <label class="toggle toggle--small">
+                    <input type="checkbox" class="toggle__input">
+                    <span class="toggle__slider"></span>
+                  </label>
+
+                  <span>Подписаться на все рассылки</span>
+                </div>
+              </form>
+
+              <div class="mailing__tabs-boxes">
+                <div class="mailing__tabs-box animate__animated animate__fadeIn animate__delay-1s">
+                  <div class="mailing__tabs-box-cont">
+                    <span class="mailing__tabs-box-subtitle">Перед рассветом </span>
+                    <h3 class="mailing__tabs-box-title">Утренний бухгалтер</h3>
+                    <p class="mailing__tabs-box-text">Самые важные новости и события за день. Кратко, по делу,
+                      структурировано.</p>
+                    <ul class="mailing__tabs-box-list">
+                      <li class="mailing__tabs-box-list-item">Новости для бухгалтеров, ИП и директора</li>
+                      <li class="mailing__tabs-box-list-item">Подборка статей за день</li>
+                      <div class="toggle-inner">
+                        <label class="toggle">
+                          <input type="checkbox" class="toggle__input" checked>
+                          <span class="toggle__slider"></span>
+                        </label>
+
+                        <span>Уже получает 59 342 человек</span>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="mailing__tabs-box-img">
+                    <img src="img/box-img-1.png" alt="img" width="80" height="80">
+                  </div>
+                </div>
+
+                <div class="mailing__tabs-box  animate__animated animate__fadeIn animate__delay-2s">
+                  <div class="mailing__tabs-box-cont">
+                    <span class="mailing__tabs-box-subtitle">После заката </span>
+                    <h3 class="mailing__tabs-box-title">Ночной бухгалтер</h3>
+                    <p class="mailing__tabs-box-text">Самая краткая газета о налогах и бухучете в мире — современная
+                      рассылка для чтения.</p>
+                    <ul class="mailing__tabs-box-list">
+                      <li class="mailing__tabs-box-list-item">Анализ, оценка и только самое главное</li>
+                      <li class="mailing__tabs-box-list-item">Лучшие комменты юзеров в обзоре</li>
+                      <div class="toggle-inner">
+                        <label class="toggle">
+                          <input type="checkbox" class="toggle__input">
+                          <span class="toggle__slider"></span>
+                        </label>
+
+                        <span>Уже получает 37 480 человек</span>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="mailing__tabs-box-img">
+                    <img src="img/box-img-2.png" alt="img" width="80" height="80">
+                  </div>
+                </div>
+
+
+                <div class="mailing__tabs-box  animate__animated animate__fadeIn animate__delay-3s">
+                  <div class="mailing__tabs-box-cont">
+                    <span class="mailing__tabs-box-subtitle">Раз в две недели </span>
+                    <h3 class="mailing__tabs-box-title">Ножницы скидок</h3>
+                    <p class="mailing__tabs-box-text">Подборка самых выгодных и полезных спецпредложений от надежных
+                      компаний.</p>
+                    <ul class="mailing__tabs-box-list">
+                      <li class="mailing__tabs-box-list-item">Акции и скидки от лидеров рынка</li>
+                      <li class="mailing__tabs-box-list-item">Те, кто подписался – экономят много денег 🤑 </li>
+                      <div class="toggle-inner">
+                        <label class="toggle">
+                          <input type="checkbox" class="toggle__input">
+                          <span class="toggle__slider"></span>
+                        </label>
+
+                        <span>Уже получает 92 118 человек</span>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="mailing__tabs-box-img">
+                    <img src="img/box-img-3.png" alt="img" width="80" height="80">
+                  </div>
+                </div>
+
+
+                <div class="mailing__tabs-box  animate__animated animate__fadeIn animate__delay-4s">
+                  <div class="mailing__tabs-box-cont">
+                    <span class="mailing__tabs-box-subtitle">По мере появления анонсов </span>
+                    <h3 class="mailing__tabs-box-title">Чемодан вебинаров</h3>
+                    <p class="mailing__tabs-box-text">Подборка с анонсами бесплатных вебинаров
+                      на самые топовые темы при участии экспертов.</p>
+                    <ul class="mailing__tabs-box-list">
+                      <li class="mailing__tabs-box-list-item mailing__tabs-box-list-item--bold">Никогда не пришлем
+                        платные вебинары</li>
+                      <li class="mailing__tabs-box-list-item">Подборка топовых тем для вебинаров</li>
+                      <div class="toggle-inner">
+                        <label class="toggle">
+                          <input type="checkbox" class="toggle__input">
+                          <span class="toggle__slider"></span>
+                        </label>
+
+                        <span>Уже получает 92 082 человек</span>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="mailing__tabs-box-img">
+                    <img src="img/box-img-4.png" alt="img" width="80" height="80">
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="mailing__tabs-panel" id="social">Контент для соцсетей</div>
+              <div class="mailing__tabs-panel" id="messengers">Контент для мессенджеров</div>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+  </main>
+
+  <div class="footer">
+    <div class="container">
+      <img class="footer__img" src="img/footer-img.svg" alt="img" width="194" height="96">
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
